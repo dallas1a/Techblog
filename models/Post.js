@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-// create our Post model
+// create  Post model
 class Post extends Model {}
  
 
@@ -22,14 +22,8 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    filename: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    blog_body: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+   
+  
     user_id: {
       type: DataTypes.INTEGER,
       references: {
